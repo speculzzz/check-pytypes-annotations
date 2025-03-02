@@ -1,0 +1,21 @@
+[project]
+name = "check-pytypes-annotations"
+version = "0.1.0"
+description = "Check Python types annotations"
+authors = [{name = "speculzzz", email = "speculzzz@gmail.com"}]
+dependencies = [
+  "pyright>=1.1.395",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pyright]
+venvPath = "."
+venv = "venv"
+pythonVersion = "3.11"
+exclude = ["tests", "venv"]
+typeCheckingMode = "strict"
+reportMissingImports = true
+reportMissingTypeStubs = true
+

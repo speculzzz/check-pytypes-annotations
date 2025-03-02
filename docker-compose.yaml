@@ -1,0 +1,7 @@
+services:
+  check-types-annotations:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: make local
+    restart: "no"
